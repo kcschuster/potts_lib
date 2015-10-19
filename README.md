@@ -12,4 +12,4 @@ To compile, you'll first need to install [CMake](https://cmake.org). Then type:
 
 Example code to run model found in **examples/** folder.
 
-Project in progress; for educational use only.
+Project in progress and may currently be incorrect. For educational use only.
