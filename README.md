@@ -12,6 +12,6 @@ To compile, you'll first need to install [CMake](https://cmake.org).  Then type:
 
 An example code to run model is found in **examples/** folder.  To compile:
 
-        c++ run_model.cpp -lpotts
+    c++ run_model.cpp -lpotts
 
 Project in progress and may currently be incorrect. For educational use only.
