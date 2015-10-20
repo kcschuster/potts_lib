@@ -10,8 +10,8 @@ To compile, you'll first need to install [CMake](https://cmake.org).  Then type:
     make
     make install
 
-An example code to run model is found in **examples/** folder.  To compile:
+An example code to implement the library is found in the **examples/** folder.  To compile:
 
     c++ run_model.cpp -lpotts
 
-Project in progress and may currently be incorrect. For educational use only.
+Project is in progress and may currently be incorrect. For educational use only.
