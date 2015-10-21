@@ -14,4 +14,4 @@ An example code to implement the library is found in the **examples/** folder.  
 
     c++ run_model.cpp -lpotts
 
-Project is in progress and may currently be incorrect. For educational use only.
+Note: Project is in progress and may currently be incorrect.
