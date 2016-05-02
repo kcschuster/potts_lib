@@ -34,6 +34,11 @@ namespace potts
         _equilibrate = false;
     }
     
+    PottsModelRandom::~PottsModelRandom()
+    {
+        cerr << "~PottsModelRandom" << endl;
+    }
+    
     
     //initializes lattice with interface
     void PottsModelRandom::initLattice()

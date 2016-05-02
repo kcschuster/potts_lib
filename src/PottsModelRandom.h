@@ -12,7 +12,6 @@
 #ifndef PottsModelRandom_H
 #define PottsModelRandom_H
 
-#include "PottsModel.h"
 #include "PottsModelInterface.h"
 
 namespace potts {
@@ -20,7 +19,8 @@ namespace potts {
     class PottsModelRandom : public PottsModelInterface
     {
     public:
-        PottsModelRandom(int n=1000, int d=2, double beta=1, int nstate=2, double J=1, int s1=0, int s2=1, double kappa=1.0);
+        PottsModelRandom(int=1000, int=2, double=1, int=2, double=1, int=0, int=1, double=1.0);
+        ~PottsModelRandom();
         
     protected:
         void initLattice();

@@ -74,7 +74,7 @@ namespace potts
     
     PottsModel::~PottsModel()
     {
-        std::cerr << "here" << std::endl;
+        std::cerr << "~PottsModel" << std::endl;
     }
     
     //initializes lattice in desired state/states

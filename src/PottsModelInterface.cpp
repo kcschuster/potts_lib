@@ -44,6 +44,11 @@ namespace potts
         _equilibrate = false;
     }
     
+    PottsModelInterface::~PottsModelInterface()
+    {
+        cerr << "~PottsModelInterface" << endl;
+    }
+    
     
     //initializes lattice with interface
     void PottsModelInterface::initLattice()

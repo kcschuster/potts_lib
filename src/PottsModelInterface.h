@@ -19,14 +19,15 @@ namespace potts {
     class PottsModelInterface : public PottsModel
     {
     public:
-        PottsModelInterface(int n=1000, int d=2, double beta=1, int nstate=2, double J=1, int s1=0, int s2=1, double kappa=1.0);
+        PottsModelInterface(int=1000, int=2, double=1, int=2, double=1, int=0, int=1, double=1.0);
+        virtual ~PottsModelInterface();
         
         void run(double);
         void equilibrate();
         double getStateFractions(int);
         
     protected:
-        void initLattice();
+        virtual void initLattice();
         int attemptMove(int);
         
         int _state1;

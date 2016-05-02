@@ -23,19 +23,19 @@ namespace potts {
     {
         
     public:
-        PottsModel(int n=1000, int d=2, double beta=1.0, int nstate=2, double J=1.0);
-        ~PottsModel();
+        PottsModel(int=1000, int=2, double=1.0, int=2, double=1.0);
+        virtual ~PottsModel();
         
         void setBeta(double);
-        void initLattice(int);
+        virtual void initLattice(int);
         double calculateTotalEnergy();
         void setSeed(unsigned short*);
         void setJ(double);
         void setMovie(int,std::string);
         double getTime();
-        void equilibrate();
+        virtual void equilibrate();
         void setEquilibrate(bool);
-        void run(double);
+        virtual void run(double);
         double getFractCrystal(int);
         int getPottsState(int);
         void printSpinCoords(std::string);
@@ -80,7 +80,7 @@ namespace potts {
         
         int deltaFxn(int,int);
         void setLattice(const std::vector<PottsModel::Site>&);
-        int attemptMove(int);
+        virtual int attemptMove(int);
         double calcSiteEnergy(int,int);
         
     };
